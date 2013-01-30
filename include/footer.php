@@ -10,9 +10,9 @@
  *  agreement you entered into with Lincong.
  */
 ?>
-<div class="mod-tooter">
+<div class="modal-footer">
+    <div class="container">
+        asd
 
-
-
-
+    </div>
 </div>

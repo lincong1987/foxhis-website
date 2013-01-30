@@ -12,23 +12,45 @@ include ("include/function.php");
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <?php include ('/include/meta.php'); ?>
         <title></title>
-        <link rel="stylesheet" href="/css/base.css"/>
-        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/base.css?v=<?php echo Q_VERSION; ?>"/>
+        <link rel="stylesheet" href="/css/common.css?v=<?php echo Q_VERSION; ?>"/>
+        <link rel="stylesheet" href="/css/index.css?v=<?php echo Q_VERSION; ?>"/>
+        <script src="js/jquery/jquery-1.8.3.min.js?v=<?php echo Q_VERSION; ?>"></script>
+        <script src="js/icinfo/icinfo-1.0.0.min.js?v=<?php echo Q_VERSION; ?>"></script>
+        <script src="js/nivo-slider/nivo.slider-3.2.min.js?v=<?php echo Q_VERSION; ?>"></script>
+        <script>
+            $(function(){
+                $('#wrap-nav .menu > li').hover(function() {
+                    $(this).find('.children').animate({ opacity: 0.5, height:'auto' },200);
+                    $(this).find('.depth1').addClass('cleddr1');
+                }, function() {
+                    $('.children').stop(true,true).hide();
+                    $('.depth1').removeClass('cleddr1');
+                }
+            ).slice(-1,-1).find('.children').addClass('sleft');
+
+            });
+        </script>
     </head>
+
     <body>
-        <div class="mod-main">
-            <?php include ('/include/header.php');?>
+        <div class="wrapper">
+            <?php include ('/include/header.php'); ?>
+            <div class="modal-main">
+                <div class="container">
+
+asdasd
 
 
 
 
-
-            <?php include ('/include/footer.php');?>
+                </div>
+            </div>
+            <?php include ('/include/footer.php'); ?>
         </div>
-
     </body>
 </html>

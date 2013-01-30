@@ -1,0 +1,34 @@
+/*
+    Document   : common
+    Created on : 2013-1-30, 16:09:56
+    Author     : Lincong <lincong1987@gmail.com>
+    Description:
+        common modal
+*/
+/* 模块 */
+.clearfix {
+    clear: both;
+    display: block;
+}
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+.wrapper {
+    background: #8290b5;
+}
+
+/* 模块 */
+.modal-header {
+    height: 110px;
+    background: #FFFFFF;
+}
+.modal-main {
+
+}
+.modal-footer {
+    height: 42px;
+}
+.modal-footer .container {
+    background: #84aea4;
+}

@@ -15,9 +15,7 @@ set_time_limit(0);//设置PHP执行时间为无限制
 //系统版本
 $version = "1.0.0.1";
 
-$Q = array(
-    dev_mode => fasle
-);
+$debug = true;
 
 /**
  * 数据库相关配置
@@ -26,7 +24,7 @@ $Q = array(
  */
 $db_type = 'mysql'; //mysql表示Mysql库
 $db_host = '192.168.1.205:3306';
-$db_user = 'hx_exam1'; //数据库用户名
+$db_user = 'hx_exam'; //数据库用户名
 $db_pass = '86617786'; //数据库密码
 $db_name = 'westsoft'; //数据库名
 $db_charset = 'utf8'; //编码
@@ -35,7 +33,10 @@ $db_charset = 'utf8'; //编码
 $web_description = "Mr.L, design";
 $web_keywords = "Mr.L, design";
 
-define('Q', $Q);
+
+define('Q_VERSION', $version);
+
+define('Q_DEBUG', $debug);
 
 define('Q_DB_TYPE', $db_type);
 define('Q_DB_HOST', $db_host);
