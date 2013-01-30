@@ -1,0 +1,4 @@
+.HRspinner{width:16px;height:10px;background:url(HRspinner.png) no-repeat;float:left;border:1px solid #CCC;cursor:pointer}
+.HRspinner:hover{border:1px solid #999}
+.HRspinner-up{background-position:0 0}
+.HRspinner-down{background-position:0 -10px}
