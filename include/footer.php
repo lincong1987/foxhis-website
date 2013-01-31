@@ -1,5 +1,4 @@
 <?php
-
 /*
  *  Copyright (c) 2012 Lincong All rights reserved.
  *  Mail lincong1987@gmail.com
@@ -10,9 +9,13 @@
  *  agreement you entered into with Lincong.
  */
 ?>
+<style>
+</style>
 <div class="modal-footer">
     <div class="container">
-        asd
-
+        <div class="modal-footer-warp">
+            <div></div>
+            <div></div>
+        </div>
     </div>
 </div>

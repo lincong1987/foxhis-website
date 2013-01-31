@@ -1,0 +1,31 @@
+/*
+    Document   : index.css
+    Created on : 2013-1-31, 14:50:04
+    Author     : Lincong <lincong1987@gmail.com>
+    Description:
+        modal-index-css
+*/
+#modal-index-slider, .slider-wrapper {
+    width: 797px;
+    height: 210px;
+    margin: 0;
+}
+#slider img, .nivoSlider {
+    width: 797px;
+    height: 210px;
+    overflow: hidden;
+}
+
+
+#modal-index-banner {
+    height: 180px;
+    padding: 20px 40px;
+}
+#modal-index-banner ul {
+
+}
+#modal-index-banner ul li {
+    margin: 0 4px;
+    float: left;
+    text-align: center;
+}
