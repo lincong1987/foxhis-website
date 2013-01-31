@@ -5,13 +5,13 @@
     Description:
         common modal
 */
-/* 模块 */
+/* 通用 */
 .clearfix {
     clear: both;
     display: block;
 }
 .container {
-    width: 970px;
+    width: 797px;
     margin: 0 auto;
 }
 .wrapper {
@@ -26,7 +26,11 @@
 .modal-main {
 
 }
-.modal-footer {
+.modal-main .container {
+    background: #FFFFFF;
+}
+
+.modal-footer, .modal-footer .container {
     height: 42px;
 }
 .modal-footer .container {
