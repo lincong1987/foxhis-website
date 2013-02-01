@@ -1,5 +1,6 @@
 <?php
-/*!
+
+/* !
  * Copyright (c) 2012 Lincong All rights reserved.
  * Mail lincong1987@gmail.com
  * QQ 159257119
@@ -8,14 +9,30 @@
  * Information and shall use it only in accordance with the terms of the license
  * agreement you entered into with Lincong.
  */
+/**
+ * 错误报告配置，开发请使用E_ALL, 生产环境建议使用0
+ */
+//禁用错误报告
 error_reporting(0);
+
+//报告运行时错误
+//error_reporting(E_ERROR | E_WARNING | E_PARSE);
+//报告所有错误
+//error_reporting(E_ALL);
+//启动会话
 session_start();
-set_time_limit(0);//设置PHP执行时间为无限制
 
-//系统版本
-$version = "1.0.0.1";
+//设置PHP执行时间为30秒（单位秒）
+set_time_limit(30);
 
+//系统版本,改动本配置将会清除js、css等资源缓存
+$version = "1.0.0.4";
+
+// 开发者模式配置
 $debug = true;
+
+// 使用SEA数据库配置
+$sinaAppEngine = false;
 
 /**
  * 数据库相关配置
@@ -28,7 +45,23 @@ $db_user = 'hx_exam'; //数据库用户名
 $db_pass = '86617786'; //数据库密码
 $db_name = 'westsoft'; //数据库名
 $db_charset = 'utf8'; //编码
+///////////////////请不要改动以下代码/////////////////////////
 
+if ($sinaAppEngine == true) {
+    $db_host = SAE_MYSQL_HOST_M . ":" . SAE_MYSQL_PORT;
+    $db_user = SAE_MYSQL_USER; //数据库用户名
+    $db_pass = SAE_MYSQL_PASS; //数据库密码
+    $db_name = SAE_MYSQL_DB; //数据库名
+}
+
+/**
+  用户名　 :  SAE_MYSQL_USER
+  密　　码 :  SAE_MYSQL_PASS
+  主库域名 :  SAE_MYSQL_HOST_M
+  从库域名 :  SAE_MYSQL_HOST_S
+  端　　口 :  SAE_MYSQL_PORT
+  数据库名 :  SAE_MYSQL_DB
+ */
 // SEO 相关
 $web_description = "Mr.L, design";
 $web_keywords = "Mr.L, design";

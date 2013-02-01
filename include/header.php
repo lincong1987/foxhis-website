@@ -86,9 +86,21 @@
         position: absolute;
         z-index: 999;
         zoom: 1;
+        width: 93px;
     }
+    .top-nav-sub li {
 
+    }
+    .top-nav-sub li a {
+        display: block;
+        color: #595757;
+        background: #FFFFFF;
 
+    }
+    .top-nav-sub li a:hover {
+        color: #595757;
+        background: #9cbdb2;
+    }
 </style>
 <div class="modal-header">
     <div class="container">
@@ -97,7 +109,7 @@
                 <a id="modal-header-logo-link" href="<?php echo WEB_HOST; ?>index.php"><img id="modal-header-logo-image" src="images/common/logo_image.png1" alt="西软" title="西软"  /></a>
             </div>
             <div id="modal-header-actions">
-                <wb:follow-button uid="2991975565" type="red_1" width="67" height="24" ></wb:follow-button>
+                <wb:follow-button uid="1171700494" type="red_1" width="67" height="24" ></wb:follow-button>
             </div>
         </div>
 
@@ -155,7 +167,7 @@
                         </ul>
                     </li>
                     <li class="top-nav-tab">
-                        <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>人才招聘</span></a></h3>
+                        <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>人力资源</span></a></h3>
                         <ul class="top-nav-sub clearfix">
                             <li><a href="/Job.html" target="_self">sss</a></li>
                             <li><a href="/Job.html" target="_self">sss</a></li>
