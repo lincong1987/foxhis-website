@@ -45,8 +45,8 @@
 
 
 #modal-index-banner {
-    height: 180px;
-    padding: 20px 40px;
+    height: 150px;
+    padding: 20px 40px 15px 40px;
 }
 #modal-index-banner ul {
 
@@ -57,8 +57,37 @@
     text-align: center;
 }
 
+.modal-index-news{
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.modal-index-news-vline {
+    margin: 10px 40px 10px 50px;
+    height: 2px;
+    background: #DDDDDD;
+}
+.modal-index-news, .modal-index-news-left, .modal-index-news-right {
+    height: 105px;
+}
+.modal-index-news-left {
+    width: 478px;
+    float: left;
+}
+.modal-index-news-right {
+    width: 225px;
+    float: left;
+}
 
-.modal-index-news {
+#modal-index-company-news {
+    background: #b3a287;
+}
+#modal-index-login {
+    background: #84aea4;
+    background-image: 
+}
+#modal-index-industry-news {
 
+}
+#modal-index-contactus {
 
 }

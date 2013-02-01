@@ -73,32 +73,41 @@
     .top-nav-link:hover, .top-nav-link-hover {
         background: #9cbdb2;
     }
-    .top-nav-link span, .top-nav-link-hover span {
+    .top-nav-link span {
         font-size: 12px;
         color: #595757;
     }
-    .top-nav-link:hover span {
+    .top-nav-link:hover span, .top-nav-link-hover span {
         color: #FFFFFF;
     }
 
     .top-nav-sub {
-        display: none;
+        visibility: hidden;
         position: absolute;
         z-index: 999;
         zoom: 1;
-        width: 93px;
+        width: 103px;
+        padding-top: 10px;
+        margin-left: -3px;
+        opacity: 0.7;
+        filter: opacity(alpha=70);
+        background: transparent;
     }
     .top-nav-sub li {
-
     }
     .top-nav-sub li a {
+        font-size: 12px;
+        padding-top: 4px;
+        height: 22px;
         display: block;
         color: #595757;
         background: #FFFFFF;
-
+        margin-bottom: 1px;
+        text-decoration: none;
+        text-align: center;
     }
     .top-nav-sub li a:hover {
-        color: #595757;
+        color: #FFFFFF;
         background: #9cbdb2;
     }
 </style>
@@ -118,73 +127,44 @@
                 <ul class="top-nav-container">
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>首页</span></a></h3>
-                        <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
-                        </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>关于我们</span></a></h3>
                         <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
+                            <li><a href="biz/about/introduction.php" target="_self">西软简介</a></li>
+                            <li><a href="biz/about/expansion.php" target="_self">发展概述</a></li>
+                            <li><a href="biz/about/honor.php" target="_self">企业荣誉</a></li>
+                            <li><a href="biz/about/culture.php" target="_self">西软文化</a></li>
                         </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>客户服务</span></a></h3>
                         <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
+                            <li><a href="biz/service/introduction.php" target="_self">工程实施</a></li>
+                            <li><a href="biz/service/introduction.php" target="_self">售后服务</a></li>
+                            <li><a href="biz/service/introduction.php" target="_self">资料下载</a></li>
                         </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>产品信息</span></a></h3>
-                        <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
-                        </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>新闻资讯</span></a></h3>
                         <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
+                            <li><a href="biz/news/introduction.php" target="_self">新闻动态</a></li>
+                            <li><a href="biz/news/introduction.php" target="_self">行业资讯</a></li>
                         </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>人力资源</span></a></h3>
                         <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
+                            <li><a href="biz/hr/introduction.php" target="_self">人力资源</a></li>
+                            <li><a href="biz/hr/introduction.php" target="_self">人才战略</a></li>
+                            <li><a href="biz/hr/introduction.php" target="_self">职位空缺</a></li>
                         </ul>
                     </li>
                     <li class="top-nav-tab">
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>联系我们</span></a></h3>
-                        <ul class="top-nav-sub clearfix">
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li><a href="/Job.html" target="_self">sss</a></li>
-                            <li class="count"></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
