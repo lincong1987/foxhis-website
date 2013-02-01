@@ -47,15 +47,35 @@ include ("include/function.php");
                     </div>
 
                     <!-- 行业资讯 -->
-                    <div class="modal-index-news">
-                        <div id="modal-index-company-news" class="modal-index-news-left"></div>
-                        <div id="modal-index-login" class="modal-index-news-right"></div>
+                    <div class="modal-index-news clearfix">
+                        <div id="modal-index-company-news" class="modal-index-news-left">
+                            <div>
+                                <ul>
+                                    <li><a>博进取精神，展飒爽英姿----2012西软团队活动之四  （11-29）</a></li>
+                                    <li><a>“勇于攀登无止尽”----2012西软团队活动之三  （10-31）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="modal-index-login" class="modal-index-news-right">asd</div>
                     </div>
 
+                    <div class="modal-index-news-vline"></div>
+
+                    <div></div>
+
                     <!-- 行业资讯 -->
-                    <div class="modal-index-news">
-                        <div id="modal-index-industry-news" class="modal-index-news-left"></div>
-                        <div id="modal-index-contactus" class="modal-index-news-right"></div>
+                    <div class="modal-index-news clearfix">
+
+                        <div id="modal-index-industry-news" class="modal-index-news-left">
+                            <div></div>
+                            <div>
+                                <ul>
+                                    <li><a>2013年中国在线旅游业十大趋势（01-08）</a></li>
+                                    <li><a>2012年中国在线旅游业八大趋势（02-13）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="modal-index-contactus" class="modal-index-news-right">ad</div>
                     </div>
                 </div>
             </div>

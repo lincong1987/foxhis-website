@@ -7,16 +7,31 @@
  *  Information and shall use it only in accordance with the terms of the license
  *  agreement you entered into with Lincong.
  */
+
+var timer;
 $(function(){
-    $('.top-nav-tab').mouseover(function() {
-        $(this).find('.top-nav-sub').slideDown(300);
-        return;
-    }).mouseover(function(){
-        $('.top-nav-sub').slideUp(100);
+
+    $(".top-nav-tab").mouseover(function(){
+        clearTimeout(timer);
+        $(".top-nav-link").removeClass("top-nav-link-hover");
+        $(".top-nav-sub").css('visibility', 'hidden');
+
+        $(this).find(".top-nav-link").addClass("top-nav-link-hover");
+        $('ul:first',this).css({
+            visibility: 'visible',
+            opacity: 0.7
+        });
+    }).mouseout(function(){
+        var me = this;
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            $(me).find(".top-nav-link").removeClass("top-nav-link-hover");
+            $('ul:first',me).css('visibility', 'hidden');
+        }, 500);
     });
 
-    $("#slider img").each(function(){
-        $(this).attr("src", $(this).attr("rel"));
+    $(".top-nav-sub").mouseover(function(){
+        clearTimeout(timer);
     });
 
     $("#modal-index-slider").slides({

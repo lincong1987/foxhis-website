@@ -12,7 +12,7 @@
 <style>
     .modal-footer-warp {
         height: 42px;
-        background-image: url("images/common/footer_logo_image.png");
+        background-image: url("images/common/footer_logo_image.png1");
         background-repeat: no-repeat;
         background-position: 48px 4px;
         padding-right: 30px;
@@ -41,6 +41,16 @@
         text-decoration: none;
     }
 </style>
+<!--[if !IE]>
+    <style>
+        #modal-footer-links {
+            color: #cce5e7;
+            font-size: 9px;
+            text-align: right;
+            padding: 4px 0 4px 0;
+        }
+    </style>
+<![endif]-->
 <div class="modal-footer">
     <div class="container">
         <div class="modal-footer-warp">
