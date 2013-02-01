@@ -49,33 +49,49 @@ include ("include/function.php");
                     <!-- 行业资讯 -->
                     <div class="modal-index-news clearfix">
                         <div id="modal-index-company-news" class="modal-index-news-left">
-                            <div>
+                            <div id="modal-index-company-news-title">
+
+                            </div>
+                            <div id="modal-index-company-news-content">
                                 <ul>
                                     <li><a>博进取精神，展飒爽英姿----2012西软团队活动之四  （11-29）</a></li>
-                                    <li><a>“勇于攀登无止尽”----2012西软团队活动之三  （10-31）</a></li>
+                                    <li><a>仙境逍遥游--2012西软团队活动之一  （05-21）</a></li>
+                                    <li><a>国庆放假通告及售后服务安排  （09-29）</a></li>
                                 </ul>
                             </div>
+                            <div id="modal-index-company-news-more"><a href="#"><img src="images/index/index_more_01.png" /></a></div>
                         </div>
-                        <div id="modal-index-login" class="modal-index-news-right">asd</div>
+                        <div id="modal-index-login" class="modal-index-news-right">
+                            <div id="modal-index-login-title"></div>
+                            <div id="modal-index-login-content">
+                                <input id="" class="login_input" />
+                                <input id="" class="login_input" />
+                            </div>
+                        </div>
                     </div>
 
                     <div class="modal-index-news-vline"></div>
 
-                    <div></div>
-
                     <!-- 行业资讯 -->
                     <div class="modal-index-news clearfix">
-
                         <div id="modal-index-industry-news" class="modal-index-news-left">
-                            <div></div>
-                            <div>
+                            <div id="modal-index-industry-news-title">
+
+                            </div>
+                            <div id="modal-index-industry-news-content">
                                 <ul>
                                     <li><a>2013年中国在线旅游业十大趋势（01-08）</a></li>
                                     <li><a>2012年中国在线旅游业八大趋势（02-13）</a></li>
+                                    <li><a>仙境逍遥游--2012西软团队活动之一  （05-21）</a></li>
                                 </ul>
                             </div>
+                            <div id="modal-index-industry-news-more"><a href="#"><img src="images/index/index_more_02.png" /></a></div>
                         </div>
-                        <div id="modal-index-contactus" class="modal-index-news-right">ad</div>
+
+                        <div id="modal-index-contactus" class="modal-index-news-right">
+                            <img src="images/index/index_24h.png" />
+
+                        </div>
                     </div>
                 </div>
             </div>

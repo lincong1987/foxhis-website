@@ -78,16 +78,80 @@
     float: left;
 }
 
+
+
+
 #modal-index-company-news {
     background: #b3a287;
 }
+#modal-index-company-news-title {
+    height: 25px;
+    background: url("../../../images/index/index_company_news_.png") no-repeat 4px 4px;
+}
+#modal-index-company-news-content {
+    padding-left: 8px;
+}
+#modal-index-company-news-content,
+#modal-index-company-news-content ul,
+#modal-index-company-news-content ul li {
+    font-size: 9px;
+    color: #FFFFFF;
+}
+#modal-index-company-news-content ul li a {
+    cursor: pointer
+}
+#modal-index-company-news-content ul li a:hover {
+    color: #595757;
+}
+#modal-index-company-news-more {
+    padding-left: 5px;
+}
 #modal-index-login {
     background: #84aea4;
-    background-image: 
 }
-#modal-index-industry-news {
+#modal-index-login-title {
+    height: 25px;
+    background: url("../../../images/index/index_login_title.png") no-repeat 4px 4px;
+}
+#modal-index-login-content {
+    height: 72px;
+    background: url("../../../images/index/index_login_bg_01.png") no-repeat -4px -8px;
+}
+#modal-index-login-content .login_input {
+    border: 0 none;
+    background: #FFFFFF;
+    width: 116px;
+    height: 16px;
+    margin-left: 40px;
 
+}
+
+#modal-index-industry-news {
+    background: #FFFFFF;
+}
+#modal-index-industry-news-title {
+    height: 25px;
+    background: url("../../../images/index/index_industry_news_.png") no-repeat 4px 4px;
+}
+#modal-index-industry-news-content {
+    padding-left: 8px;
+}
+#modal-index-industry-news-content,
+#modal-index-industry-news-content ul,
+#modal-index-industry-news-content ul li {
+    font-size: 9px;
+    color: #595757;
+}
+#modal-index-industry-news-content ul li a {
+    cursor: pointer
+}
+#modal-index-industry-news-content ul li a:hover {
+    color: #595757;
+}
+#modal-index-industry-news-more {
+    padding-left: 5px;
 }
 #modal-index-contactus {
 
 }
+
