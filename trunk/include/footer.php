@@ -10,12 +10,46 @@
  */
 ?>
 <style>
+    .modal-footer-warp {
+        height: 42px;
+        background-image: url("images/common/footer_logo_image.png");
+        background-repeat: no-repeat;
+        background-position: 48px 4px;
+        padding-right: 30px;
+        font-size: 10px;
+    }
+    #modal-footer-links {
+        color: #cce5e7;
+        font-size: 9px;
+        text-align: right;
+        padding: 8px 0 4px 0;
+    }
+    #modal-footer-links span {
+        font-size: 9px;
+    }
+    #modal-footer-links a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    #modal-footer-copyright {
+        color: #cce5e7;
+        font-size: 9px;
+        text-align: right;
+    }
+    #modal-footer-copyright a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 </style>
 <div class="modal-footer">
     <div class="container">
         <div class="modal-footer-warp">
-            <div></div>
-            <div></div>
+            <div id="modal-footer-links">
+                <a href="/">西软科技</a> <span>|</span> <a href="/">石基信息</a> <span>|</span> <a href="/">畅联</a> <span>|</span> <a href="/">石基信息</a> <span>|</span> <a href="/">INFRASYS</a>
+            </div>
+            <div id="modal-footer-copyright">
+                版权所有: 2013 杭州西软科技有限公司 网站管理员邮箱: <a href="mailto:Webmaster@foxhis.com">Webmaster@foxhis.com</a> | 浙ICP备 05047888 号
+            </div>
         </div>
     </div>
 </div>
