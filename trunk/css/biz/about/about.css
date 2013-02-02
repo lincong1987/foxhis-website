@@ -66,3 +66,22 @@
 .modal-tab-content {
     display: none;
 }
+
+
+/* 文化 */
+
+.modal-about-culture {
+    padding-left: 20px;
+    padding-top: 25px;
+    border-left: 1px #CCCCCC solid;
+}
+
+.modal-about-culture-title {
+    background: url("../../../../images/about/culture_title.png") no-repeat #FFFFFF 0px 0;
+    height: 18px;
+    margin: 18px 0;
+    content: ""
+}
+.modal-about-culture-content {
+    margin-bottom: 20px;
+}
