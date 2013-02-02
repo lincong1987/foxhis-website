@@ -14,10 +14,9 @@ include("/../../../include/function.php");
 <html lang="zh-CN">
     <head>
         <?php include ('../../../include/meta.php'); ?>
-        <title>西软简介</title>
+        <title>关于我们</title>
         <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/base.css?v=<?php echo Q_VERSION; ?>"/>
         <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/common.css?v=<?php echo Q_VERSION; ?>"/>
-        <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/biz/about/about.css?v=<?php echo Q_VERSION; ?>"/>
         <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/jquery/jquery-1.8.3.min.js?v=<?php echo Q_VERSION; ?>"></script>
         <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/icinfo/icinfo-1.0.0.min.js?v=<?php echo Q_VERSION; ?>"></script>
     </head>
@@ -28,8 +27,8 @@ include("/../../../include/function.php");
             <!-- 主体开始 -->
             <div class="modal-main clearfix">
                 <div class="container">
-                    <div class="modal-about-introduction">
-                        西软简介
+                    <div>
+                        关于我们
                     </div>
                 </div>
             </div>

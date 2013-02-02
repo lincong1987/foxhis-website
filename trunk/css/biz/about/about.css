@@ -1,0 +1,68 @@
+/*
+    Document   : about
+    Created on : 2013-2-2, 18:20:17
+    Author     : Lincong <lincong1987@gmail.com>
+    Description:
+        样式表-关于我们
+*/
+
+
+/* 荣誉 */
+.modal-about-honor-title {
+    background: url("../../../../images/about/honor_title.png") no-repeat #FFFFFF 10px 0;
+    height: 18px;
+    margin: 18px 0;
+    content: ""
+}
+.modal-about-honor-content {
+}
+.modal-about-honor-content p {
+}
+
+/* */
+.modal-about-expansion {
+    border-left: 1px #CCC solid;
+    padding-left: 10px;
+}
+.modal-about-expansion-title {
+    background: url("../../../../images/about/expansion_title.png") no-repeat #FFFFFF 10px 0;
+    height: 18px;
+    margin: 18px 0;
+    content: ""
+}
+.modal-about-expansion-content {
+    width: 622px;
+    margin-left: 10px;
+}
+.modal-tab {
+
+}
+.modal-tab-title {
+    padding-left: 25px;
+}
+.modal-tab-title ul {}
+.modal-tab-title ul li {
+    float: left;
+    width: 109px;
+}
+.modal-tab-title ul li a {
+    color: #1E70B8;
+    display: block;
+    width: 109px;
+    text-align: center;
+    height: 26px;
+    font-weight: 900;
+    padding-top: 6px;
+    cursor: pointer;
+}
+.modal-tab-title ul li a:hover,
+.modal-tab-title ul li .hover{
+    color: #FFFFFF;
+    background: url("../../../../images/about/expansion_tab_title_bg.png") #A2C5BC;
+}
+.modal-tab-content-warp {
+    background: #A2C5BC;
+}
+.modal-tab-content {
+    display: none;
+}

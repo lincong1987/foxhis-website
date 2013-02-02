@@ -5,6 +5,9 @@
     Description:
         common modal
 */
+html, body {
+    background: #FFFFFF;
+}
 /* 通用 */
 .clearfix {
     clear: both;
@@ -14,8 +17,11 @@
     width: 797px;
     margin: 0 auto;
 }
+
 .wrapper {
     background: #8290b5;
+    width: 970px;
+    margin: 0 auto;
 }
 
 /* 模块 */
@@ -36,3 +42,41 @@
 .modal-footer .container {
     background: #84aea4;
 }
+
+
+/* common */
+.modal-l-r {
+    width: 100%;
+}
+.modal-left-menu {
+    margin-top: 44px;
+    padding-left: 40px;
+}
+.modal-left-menu-title {
+    color: #727171;
+    font-weight: 900;
+}
+.modal-left-menu-title-link {
+
+}
+.modal-left-menu-content {
+
+}
+.modal-left-menu-content li {
+    padding-top: 16px;
+}
+.modal-left-menu-content li a {
+    color: #727171;
+    display: block;
+    padding-left: 24px;
+    font-size: 12px;
+    height: 16px;
+    text-decoration: none;
+}
+.modal-left-menu-content li a:hover,
+.modal-left-menu-content li .hover {
+    color: #1E70B8;
+    background: url("../../../../images/common/left_menu_title_point.png") no-repeat 0px 2px;
+}
+
+

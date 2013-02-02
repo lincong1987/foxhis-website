@@ -1,5 +1,5 @@
 <?php
-include ("include/function.php");
+include ("/include/function.php");
 ?>
 <!--
  Copyright (c) 2012 Lincong All rights reserved.
@@ -12,14 +12,15 @@ include ("include/function.php");
 -->
 
 <!DOCTYPE html>
-<html lang="zh-CN" xmlns:wb=“http://open.weibo.com/wb”>
+<html lang="zh-CN">
     <head>
         <?php include ('include/meta.php'); ?>
         <title>首页</title>
-        <link rel="stylesheet" href="css/base.css?v=<?php echo Q_VERSION; ?>"/>
-        <link rel="stylesheet" href="css/common.css?v=<?php echo Q_VERSION; ?>"/>
-        <link rel="stylesheet" href="css/biz/index/index.css?v=<?php echo Q_VERSION; ?>"/>
-
+        <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/base.css?v=<?php echo Q_VERSION; ?>"/>
+        <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/common.css?v=<?php echo Q_VERSION; ?>"/>
+        <link rel="stylesheet" href="<?php echo WEB_HOST; ?>css/biz/index/index.css?v=<?php echo Q_VERSION; ?>"/>
+        <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/jquery/jquery-1.8.3.min.js?v=<?php echo Q_VERSION; ?>"></script>
+        <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/icinfo/icinfo-1.0.0.min.js?v=<?php echo Q_VERSION; ?>"></script>
     </head>
 
     <body>
@@ -31,27 +32,25 @@ include ("include/function.php");
                     <!-- 主页焦点图 -->
                     <div id="modal-index-slider" class="clearfix">
                         <div class="slides_container">
-                            <div><img src="images/index/index_slider_banner_01.png" /></div>
-                            <div><img src="images/index/index_slider_banner_02.png" /></div>
-                            <div><img src="images/index/index_slider_banner_03.png" /></div>
+                            <div><img src="images/index/index_slider_banner_01.png" alt="提示" title="提示" /></div>
+                            <div><img src="images/index/index_slider_banner_02.png" alt="提示" title="提示" /></div>
+                            <div><img src="images/index/index_slider_banner_03.png" alt="提示" title="提示" /></div>
                         </div>
                     </div>
 
                     <!-- banner -->
                     <div id="modal-index-banner" class="clearfix">
                         <ul>
-                            <li><a href="/"><img src="images/index/index_banner_01.png" /></a></li>
-                            <li><a href="/"><img src="images/index/index_banner_02.png" /></a></li>
-                            <li><a href="/"><img src="images/index/index_banner_03.png" /></a></li>
+                            <li><a href="/" title="提示"><img src="images/index/index_banner_01.png" /></a></li>
+                            <li><a href="/" title="提示"><img src="images/index/index_banner_02.png" /></a></li>
+                            <li><a href="/" title="提示"><img src="images/index/index_banner_03.png" /></a></li>
                         </ul>
                     </div>
 
                     <!-- 行业资讯 -->
                     <div class="modal-index-news clearfix">
                         <div id="modal-index-company-news" class="modal-index-news-left">
-                            <div id="modal-index-company-news-title">
-
-                            </div>
+                            <div id="modal-index-company-news-title"></div>
                             <div id="modal-index-company-news-content">
                                 <ul>
                                     <li><a>博进取精神，展飒爽英姿----2012西软团队活动之四  （11-29）</a></li>
@@ -64,8 +63,12 @@ include ("include/function.php");
                         <div id="modal-index-login" class="modal-index-news-right">
                             <div id="modal-index-login-title"></div>
                             <div id="modal-index-login-content">
-                                <input id="" class="login_input" />
-                                <input id="" class="login_input" />
+                                <div id="login-input-warp-username" class="login-input-warp">
+                                    <input type="text" id="" class="login_input" />
+                                </div>
+                                <div id="login-input-warp-password" class="login-input-warp">
+                                    <input type="password" id="" class="login_input" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,14 +78,12 @@ include ("include/function.php");
                     <!-- 行业资讯 -->
                     <div class="modal-index-news clearfix">
                         <div id="modal-index-industry-news" class="modal-index-news-left">
-                            <div id="modal-index-industry-news-title">
-
-                            </div>
+                            <div id="modal-index-industry-news-title"></div>
                             <div id="modal-index-industry-news-content">
                                 <ul>
                                     <li><a>2013年中国在线旅游业十大趋势（01-08）</a></li>
                                     <li><a>2012年中国在线旅游业八大趋势（02-13）</a></li>
-                                    <li><a>仙境逍遥游--2012西软团队活动之一  （05-21）</a></li>
+                                    <li><a>仙境逍遥游--2012西软团队活动之一（05-21）</a></li>
                                 </ul>
                             </div>
                             <div id="modal-index-industry-news-more"><a href="#"><img src="images/index/index_more_02.png" /></a></div>
@@ -99,11 +100,7 @@ include ("include/function.php");
 
             <?php include ('include/footer.php'); ?>
         </div>
-
-        <script type='text/javascript' src="js/jquery/jquery-1.8.3.min.js?v=<?php echo Q_VERSION; ?>"></script>
-        <script type='text/javascript' src="js/icinfo/icinfo-1.0.0.min.js?v=<?php echo Q_VERSION; ?>"></script>
-        <script type='text/javascript' src="js/slides/slides.jquery.js?v=<?php echo Q_VERSION; ?>" ></script>
-        <script type='text/javascript' src="js/biz/index/index.js?v=<?php echo Q_VERSION; ?>" ></script>
-        <script type='text/javascript' src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" charset="utf-8"></script>
+        <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/slides/slides.jquery.js?v=<?php echo Q_VERSION; ?>" ></script>
+        <script type='text/javascript' src="<?php echo WEB_HOST; ?>js/biz/index/index.js?v=<?php echo Q_VERSION; ?>" ></script>
     </body>
 </html>

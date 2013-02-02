@@ -12,7 +12,7 @@
 <style>
     .modal-footer-warp {
         height: 42px;
-        background-image: url("images/common/footer_logo_image.png1");
+        background-image: url("<?php echo WEB_HOST; ?>images/common/footer_logo_image.png");
         background-repeat: no-repeat;
         background-position: 48px 4px;
         padding-right: 30px;
@@ -20,12 +20,12 @@
     }
     #modal-footer-links {
         color: #cce5e7;
-        font-size: 9px;
+        font-size: 12px;
         text-align: right;
-        padding: 8px 0 4px 0;
+        padding: 4px 0 4px 0;
     }
     #modal-footer-links span {
-        font-size: 9px;
+        font-size: 12px;
     }
     #modal-footer-links a {
         color: #FFFFFF;
@@ -33,7 +33,7 @@
     }
     #modal-footer-copyright {
         color: #cce5e7;
-        font-size: 9px;
+        font-size: 12px;
         text-align: right;
     }
     #modal-footer-copyright a {

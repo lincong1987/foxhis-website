@@ -9,6 +9,37 @@
  *  agreement you entered into with Lincong.
  */
 ?>
+<script type="text/javascript">
+
+    icinfo.namespace("timer");
+    icinfo.namespace("topnav");
+    icinfo.timer.top_nav_tab = null;
+
+    icinfo.topnav.init = function(){
+        $(".top-nav-tab").mouseover(function(){
+            clearTimeout(icinfo.timer.top_nav_tab);
+            $(".top-nav-link").removeClass("top-nav-link-hover");
+            $(".top-nav-sub").css('visibility', 'hidden');
+
+            $(this).find(".top-nav-link").addClass("top-nav-link-hover");
+            $('ul:first',this).css({
+                visibility: 'visible',
+                opacity: 0.7
+            });
+        }).mouseout(function(){
+            var me = this;
+            clearTimeout(icinfo.timer.top_nav_tab);
+            icinfo.timer.top_nav_tab = setTimeout(function(){
+                $(me).find(".top-nav-link").removeClass("top-nav-link-hover");
+                $('ul:first',me).css('visibility', 'hidden');
+            }, 500);
+        });
+    };
+
+    $(function(){
+        icinfo.topnav.init();
+    });
+</script>
 <style>
     #modal-header-warp {
         height: 78px;
@@ -36,7 +67,14 @@
     #modal-header-actions {
         float: right;
         padding-top: 18px;
-        padding-right: 10px;
+        padding-right: 48px;
+    }
+    #modal-header-actions a {
+        margin-left: 14px;
+        cursor: pointer;
+    }
+    #modal-header-actions a img {
+        border: 0 none;
     }
 
     #top-nav-warp {
@@ -63,7 +101,7 @@
     .top-nav-link {
         display: block;
         width: 93px;
-        height: 32px;
+        height: 28px;
         text-align: center;
         text-decoration: none;
         background: #FFFFFF;
@@ -115,10 +153,11 @@
     <div class="container">
         <div id="modal-header-warp" class="clearfix">
             <div id="modal-header-logo">
-                <a id="modal-header-logo-link" href="<?php echo WEB_HOST; ?>index.php"><img id="modal-header-logo-image" src="images/common/logo_image.png1" alt="西软" title="西软"  /></a>
+                <a id="modal-header-logo-link" href="<?php echo WEB_HOST; ?>index.php"><img id="modal-header-logo-image" src="<?php echo WEB_HOST; ?>images/common/logo_image.png" alt="西软" title="西软"  /></a>
             </div>
             <div id="modal-header-actions">
-                <wb:follow-button uid="1171700494" type="red_1" width="67" height="24" ></wb:follow-button>
+                <a href="" alt="微博" title="微博"><img alt="微博" src="<?php echo WEB_HOST; ?>images/common/weibo.png" /></a>
+                <a href="" alt="邮件" title="邮件"><img alt="邮件" src="<?php echo WEB_HOST; ?>images/common/mail.png" /></a>
             </div>
         </div>
 
@@ -129,12 +168,12 @@
                         <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>首页</span></a></h3>
                     </li>
                     <li class="top-nav-tab">
-                        <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>关于我们</span></a></h3>
+                        <h3><a href="<?php echo WEB_HOST; ?>php/biz/about/index.php" class="top-nav-link" target="_self"><span>关于我们</span></a></h3>
                         <ul class="top-nav-sub clearfix">
-                            <li><a href="biz/about/introduction.php" target="_self">西软简介</a></li>
-                            <li><a href="biz/about/expansion.php" target="_self">发展概述</a></li>
-                            <li><a href="biz/about/honor.php" target="_self">企业荣誉</a></li>
-                            <li><a href="biz/about/culture.php" target="_self">西软文化</a></li>
+                            <li><a href="<?php echo WEB_HOST; ?>php/biz/about/introduction.php" target="_self">西软简介</a></li>
+                            <li><a href="<?php echo WEB_HOST; ?>php/biz/about/expansion.php" target="_self">发展概述</a></li>
+                            <li><a href="<?php echo WEB_HOST; ?>php/biz/about/honor.php" target="_self">企业荣誉</a></li>
+                            <li><a href="<?php echo WEB_HOST; ?>php/biz/about/culture.php" target="_self">西软文化</a></li>
                         </ul>
                     </li>
                     <li class="top-nav-tab">
@@ -164,7 +203,7 @@
                         </ul>
                     </li>
                     <li class="top-nav-tab">
-                        <h3><a href="<?php echo WEB_HOST; ?>index.php" class="top-nav-link" target="_self"><span>联系我们</span></a></h3>
+                        <h3><a href="<?php echo WEB_HOST; ?>php/biz/con/index.php" class="top-nav-link" target="_self"><span>联系我们</span></a></h3>
                     </li>
                 </ul>
             </div>
