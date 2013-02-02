@@ -8,27 +8,8 @@
  *  agreement you entered into with Lincong.
  */
 
-var timer;
+
 $(function(){
-
-    $(".top-nav-tab").mouseover(function(){
-        clearTimeout(timer);
-        $(".top-nav-link").removeClass("top-nav-link-hover");
-        $(".top-nav-sub").css('visibility', 'hidden');
-
-        $(this).find(".top-nav-link").addClass("top-nav-link-hover");
-        $('ul:first',this).css({
-            visibility: 'visible',
-            opacity: 0.7
-        });
-    }).mouseout(function(){
-        var me = this;
-        clearTimeout(timer);
-        timer = setTimeout(function(){
-            $(me).find(".top-nav-link").removeClass("top-nav-link-hover");
-            $('ul:first',me).css('visibility', 'hidden');
-        }, 500);
-    });
 
     $(".top-nav-sub").mouseover(function(){
         clearTimeout(timer);
@@ -36,7 +17,9 @@ $(function(){
 
     $("#modal-index-slider").slides({
         effect: 'fade',
-        preloadImage: 'images/loading.gif',
+        fadeSpeed: 500,
+        play: 3000,
+        hoverPause: true,
         paginationClass: "slider-control"
     });
 
